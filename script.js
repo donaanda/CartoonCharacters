@@ -1,5 +1,7 @@
 $(document).ready(initializeApp);
 
+var cartoonCharacterArray = [];
+
 function initializeApp() {
     addClickHandlersToElements();
 }
@@ -11,7 +13,7 @@ function addClickHandlersToElements() {
 }
 
 function handleAddClick() {
-
+    addCartoonCharacter();
 }
 
 function handleCancelClick() {
@@ -20,4 +22,17 @@ function handleCancelClick() {
 
 function handleDataClick() {
 
+}
+
+function addCartoonCharacter() {
+    var newName = $('#characterName').val();
+    var newShow = $('#characterShow').val();
+    var newType = $('#characterType').val();
+    var newCartoonCharacter = {
+        name: newName,
+        show: newShow,
+        type: newType
+    };
+
+    cartoonCharacterArray.push(newCartoonCharacter);
 }
