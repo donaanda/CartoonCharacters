@@ -7,9 +7,9 @@ function initializeApp() {
 }
 
 function addClickHandlersToElements() {
-    $(".cartoon-character-add-form").on('click', '.btn-success', handleAddClick);
-    $(".cartoon-character-add-form").on('click', '.btn-default', handleCancelClick);
-    $(".cartoon-character-add-form").on('click', '.btn-primary', handleDataClick);
+    $('.cartoon-character-add-form').on('click', '.btn-success', handleAddClick);
+    $('.cartoon-character-add-form').on('click', '.btn-default', handleCancelClick);
+    $('.cartoon-character-add-form').on('click', '.btn-primary', handleDataClick);
 }
 
 function handleAddClick() {
@@ -35,4 +35,12 @@ function addCartoonCharacter() {
     };
 
     cartoonCharacterArray.push(newCartoonCharacter);
+    clearAddCartoonCharacterFormInputs();
+
+}
+
+function clearAddCartoonCharacterFormInputs() {
+    $('#characterName').val("");
+    $('#characterShow').val("");
+    $('#characterType').val("");
 }
