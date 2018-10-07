@@ -48,4 +48,7 @@ function clearAddCartoonCharacterFormInputs() {
 function RenderCartoonCharacterOnDom(cartoonCharacterObject) {
     var cartoonCharacter = cartoonCharacterObject;
     var newTr = $('<tr>');
+    var newCartoonCharacterName = $('<td>', {
+        text: cartoonCharacterObject.name
+    });
 }
