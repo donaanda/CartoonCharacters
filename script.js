@@ -51,4 +51,10 @@ function RenderCartoonCharacterOnDom(cartoonCharacterObject) {
     var newCartoonCharacterName = $('<td>', {
         text: cartoonCharacterObject.name
     });
+    var newCartoonCharacterShow = $('<td>', {
+        text: cartoonCharacterObject.show
+    });
+    var newCartoonCharacterType = $('<td>', {
+        text: cartoonCharacterObject.type
+    });
 }
