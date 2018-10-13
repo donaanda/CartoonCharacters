@@ -57,4 +57,9 @@ function RenderCartoonCharacterOnDom(cartoonCharacterObject) {
     var newCartoonCharacterType = $('<td>', {
         text: cartoonCharacterObject.type
     });
+    var deleteButton = $('<td>', {
+        text: 'Delete',
+        class: 'btn btn-danger',
+        type: 'button'
+    });
 }
