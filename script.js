@@ -62,4 +62,7 @@ function RenderCartoonCharacterOnDom(cartoonCharacterObject) {
         class: 'btn btn-danger',
         type: 'button'
     });
+
+    newTr.append(newCartoonCharacterName, newCartoonCharacterShow, newCartoonCharacterType, deleteButton);
+    $('tbody').append(newTr);
 }
