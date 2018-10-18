@@ -66,3 +66,7 @@ function RenderCartoonCharacterOnDom(cartoonCharacterObject) {
     newTr.append(newCartoonCharacterName, newCartoonCharacterShow, newCartoonCharacterType, deleteButton);
     $('tbody').append(newTr);
 }
+
+function updateCartoonCharacterList(cartoonCharacters) {
+
+}
