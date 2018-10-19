@@ -68,5 +68,7 @@ function RenderCartoonCharacterOnDom(cartoonCharacterObject) {
 }
 
 function updateCartoonCharacterList(cartoonCharacters) {
-
+    for (var index = 0; index < cartoonCharacters.length; index++) {
+        RenderCartoonCharacterOnDom(cartoonCharacters[index]);
+    }
 }
