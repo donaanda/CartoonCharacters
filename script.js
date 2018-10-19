@@ -45,7 +45,7 @@ function clearAddCartoonCharacterFormInputs() {
     $('#characterType').val("");
 }
 
-function RenderCartoonCharacterOnDom(cartoonCharacterObject) {
+function renderCartoonCharacterOnDom(cartoonCharacterObject) {
     var cartoonCharacter = cartoonCharacterObject;
     var newTr = $('<tr>');
     var newCartoonCharacterName = $('<td>', {
@@ -69,6 +69,6 @@ function RenderCartoonCharacterOnDom(cartoonCharacterObject) {
 
 function updateCartoonCharacterList(cartoonCharacters) {
     for (var index = 0; index < cartoonCharacters.length; index++) {
-        RenderCartoonCharacterOnDom(cartoonCharacters[index]);
+        renderCartoonCharacterOnDom(cartoonCharacters[index]);
     }
 }
