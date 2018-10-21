@@ -36,6 +36,7 @@ function addCartoonCharacter() {
 
     cartoonCharacterArray.push(newCartoonCharacter);
     clearAddCartoonCharacterFormInputs();
+    updateCartoonCharacterList(cartoonCharacterArray);
 
 }
 
