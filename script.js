@@ -17,7 +17,7 @@ function handleAddClick() {
 }
 
 function handleCancelClick() {
-
+    clearAddCartoonCharacterFormInputs();
 }
 
 function handleDataClick() {
