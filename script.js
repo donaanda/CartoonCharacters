@@ -71,3 +71,7 @@ function renderCartoonCharacterOnDom(cartoonCharacterObject) {
 function updateCartoonCharacterList(cartoonCharacters) {
     renderCartoonCharacterOnDom(cartoonCharacters[cartoonCharacters.length - 1]);
 }
+
+function removeCartoonCharacter() {
+    
+}
