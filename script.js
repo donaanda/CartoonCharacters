@@ -64,7 +64,7 @@ function renderCartoonCharacterOnDom(cartoonCharacterObject) {
         type: 'button'
     });
 
-    removeCartoonCharacter();
+    removeCartoonCharacter(newTr, deleteButton, cartoonCharacter);
     newTr.append(newCartoonCharacterName, newCartoonCharacterShow, newCartoonCharacterType, deleteButton);
     $('tbody').append(newTr);
 }
@@ -73,6 +73,8 @@ function updateCartoonCharacterList(cartoonCharacters) {
     renderCartoonCharacterOnDom(cartoonCharacters[cartoonCharacters.length - 1]);
 }
 
-function removeCartoonCharacter() {
-    
+function removeCartoonCharacter(tableRow, button, cartoonCharacter) {
+    button.click(function () {
+
+    });
 }
