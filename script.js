@@ -75,6 +75,8 @@ function updateCartoonCharacterList(cartoonCharacters) {
 
 function removeCartoonCharacter(tableRow, button, cartoonCharacter) {
     button.click(function () {
-
+        tableRow.remove();
+        var index = cartoonCharacterArray.indexOf(cartoonCharacter);
+        cartoonCharacterArray.splice(index, 1);
     });
 }
