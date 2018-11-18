@@ -21,7 +21,14 @@ function handleCancelClick() {
 }
 
 function handleDataClick() {
-
+    $.ajax({
+        dataType: 'JSONP',
+        url: 'http://localhost:8888/get_data.php',
+        method: 'POST',
+        success: function (response) {
+            console.log(response);
+        }
+    });
 }
 
 function addCartoonCharacter() {
