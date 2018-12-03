@@ -27,6 +27,7 @@ function handleDataClick() {
         method: 'POST',
         success: function (response) {
             console.log(response);
+            return true;
         }
     });
 }
