@@ -58,13 +58,16 @@ function renderCartoonCharacterOnDom(cartoonCharacterObject) {
     var cartoonCharacter = cartoonCharacterObject;
     var newTr = $('<tr>');
     var newCartoonCharacterName = $('<td>', {
-        text: cartoonCharacterObject.name
+        text: cartoonCharacterObject.name,
+        class: 'text-color'
     });
     var newCartoonCharacterShow = $('<td>', {
-        text: cartoonCharacterObject.show
+        text: cartoonCharacterObject.show,
+        class: 'text-color'
     });
     var newCartoonCharacterType = $('<td>', {
-        text: cartoonCharacterObject.type
+        text: cartoonCharacterObject.type,
+        class: 'text-color'
     });
     var deleteButton = $('<td>', {
         text: 'Delete',
