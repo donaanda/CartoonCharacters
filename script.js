@@ -22,7 +22,7 @@ function handleCancelClick() {
 
 function handleDataClick() {
     $.ajax({
-        dataType: 'JSONP',
+        dataType: 'JSON',
         url: 'http://localhost:8888/get_data.php',
         method: 'POST',
         success: function (response) {
@@ -31,6 +31,7 @@ function handleDataClick() {
         }
     });
 }
+
 
 function addCartoonCharacter() {
     var newName = $('#characterName').val();
