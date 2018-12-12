@@ -26,7 +26,20 @@ function handleDataClick() {
         url: 'http://localhost:8888/get_data.php',
         method: 'POST',
         success: function (response) {
-            console.log(response);
+            console.log(response.data);
+            for (var index = 0; index < response.data.length; index++) {
+                var newName = response.data[index].name;
+                var newShow = response.data[index].show;
+                var newType = response.data[index].type;
+                var newCartoonCharacter = {
+                    name: newName,
+                    show: newShow,
+                    type: newType
+                };
+                cartoonCharacterArray.push(newCartoonCharacter);
+                updateCartoonCharacterList(cartoonCharacterArray);
+            }
+
             return true;
         }
     });
